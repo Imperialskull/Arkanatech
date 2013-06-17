@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 
 
 
-public class AetherBlocks {
+public class ArkaneBlocks {
     
     /*declare Block Instancing here*/
     public static Block plastic;

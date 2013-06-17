@@ -8,6 +8,14 @@ public class Strings
     public static final String PLEXIGLASS_NAME = "plexiglass";
     public static final String PLEXIGLOW_NAME = "plexiglow";
     
+    
+    /*ITEM NAMES*/
+    
+    public static final String CRAFT_ITEM_NAME = "";
+    public static final String RUNESTONE_NAME = "Rune";
+    
+    
+    /*COLOUR STRINGS FOR META-BLOCKS or really anything...*/
     public static final String[] COLOURS = {
         "White", "Orange", "Magenta",
         "light Blue", "Yellow", "Lime", "Pink", "Grey", "Light Grey", "Cyan",

@@ -5,20 +5,21 @@
 
 
     import net.minecraft.creativetab.CreativeTabs;
-    import imperialskull.at1.block.AetherBlocks;
-    import imperialskull.at1.core.proxy.CommonProxy;
-    import imperialskull.at1.creativetab.CreativeTabAT1;
-    import imperialskull.at1.lib.Reference;
-    import cpw.mods.fml.common.Mod;
-    import cpw.mods.fml.common.Mod.Init;
-    import cpw.mods.fml.common.Mod.Instance;
-    import cpw.mods.fml.common.Mod.PostInit;
-    import cpw.mods.fml.common.Mod.PreInit;
-    import cpw.mods.fml.common.SidedProxy;
-    import cpw.mods.fml.common.event.FMLInitializationEvent;
-    import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-    import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-    import cpw.mods.fml.common.network.NetworkMod;
+import imperialskull.at1.block.ArkaneBlocks;
+import imperialskull.at1.core.proxy.CommonProxy;
+import imperialskull.at1.creativetab.CreativeTabAT1;
+import imperialskull.at1.item.ArkaneItems;
+import imperialskull.at1.lib.Reference;
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.Init;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.Mod.PostInit;
+import cpw.mods.fml.common.Mod.PreInit;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkMod;
 
 
 
@@ -56,7 +57,8 @@
             @PreInit
             public void preInit(FMLPreInitializationEvent event) {
                 
-                AetherBlocks.init();
+                ArkaneBlocks.init();
+                ArkaneItems.init();
                 
             }
             

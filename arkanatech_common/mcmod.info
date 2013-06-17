@@ -1,0 +1,22 @@
+[
+{
+  "modid": "AT1",
+  "name": "Arkanatech",
+  "description": "Synthetic materials and magic abound!",
+  "version": "A-1",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Imperialskull",
+	"CaptainNarco"
+  ],
+  "credits": "Mojang,MCP,Forge team, Pahimar, Wuppy",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
+  

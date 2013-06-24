@@ -17,7 +17,8 @@ import net.minecraft.util.MathHelper;
 public class CraftingItems extends Item {
     
     private static final String[] CRAFT_ITEM_NAMES = new String[]
-            {"plasticlump","clearplasticlump","plasticrod",
+            {"plasticlump","clearplasticlump","plasticrod","woodflower",
+        "gelatinpowder", "graphitedust"
         
             };
     
@@ -35,7 +36,7 @@ public class CraftingItems extends Item {
      @Override
      public String getUnlocalizedName(ItemStack itemStack){
          
-         int meta = MathHelper.clamp_int(itemStack.getItemDamage(),0,3);
+         int meta = MathHelper.clamp_int(itemStack.getItemDamage(),0,6);
          return super.getUnlocalizedName() + CRAFT_ITEM_NAMES[meta];
      }
      
@@ -44,7 +45,7 @@ public class CraftingItems extends Item {
      @SideOnly(Side.CLIENT)   
      public Icon getIconFromDamage(int meta){
          
-         int j = MathHelper.clamp_int(meta, 0, 5);
+         int j = MathHelper.clamp_int(meta, 0, 6);
          return icons[j];
      }
      
@@ -67,7 +68,7 @@ public class CraftingItems extends Item {
      @SideOnly(Side.CLIENT)
      public void getSubItems(int id, CreativeTabs creativeTab, List list) {
 
-         for (int meta = 0; meta < 3; ++meta) {
+         for (int meta = 0; meta < 6; ++meta) {
              list.add(new ItemStack(id, 1, meta));
          }
      }

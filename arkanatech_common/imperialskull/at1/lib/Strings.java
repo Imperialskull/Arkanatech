@@ -13,6 +13,7 @@ public class Strings
     
     public static final String CRAFT_ITEM_NAME = "";
     public static final String RUNESTONE_NAME = "Rune";
+    public static final String PLASTIC_SWORD = "plasticsword";
     
     
     /*COLOUR STRINGS FOR META-BLOCKS or really anything...*/

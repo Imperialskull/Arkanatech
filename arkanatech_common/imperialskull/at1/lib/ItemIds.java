@@ -7,6 +7,7 @@ public class ItemIds {
     public static int CRAFT_ITEMS_DEFAULT = 27000;
     public static int RUNESTONE_DEFAULT = 27001;
     public static int PLASTICSWORD_DEFAULT = 27002;
+    public static int PLASTICPICK_DEFAULT = 27003;
     
     
     /*POST CONFIG ID'S */
@@ -14,5 +15,6 @@ public class ItemIds {
     public static int CRAFT_ITEMS;
     public static int RUNESTONE;
     public static int PLASTICSWORD;
+    public static int PLASTICPICK;
 
 }

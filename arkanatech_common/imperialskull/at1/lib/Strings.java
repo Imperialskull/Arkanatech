@@ -12,8 +12,9 @@ public class Strings
     /*ITEM NAMES*/
     
     public static final String CRAFT_ITEM_NAME = "";
-    public static final String RUNESTONE_NAME = "Rune";
+    public static final String RUNESTONE_NAME = "rune";
     public static final String PLASTIC_SWORD = "plasticsword";
+    public static final String PLASTIC_PICK = "plasticpick";
     
     
     /*COLOUR STRINGS FOR META-BLOCKS or really anything...*/

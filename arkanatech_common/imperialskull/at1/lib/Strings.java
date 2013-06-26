@@ -13,10 +13,19 @@ public class Strings
     
     public static final String CRAFT_ITEM_NAME = "";
     public static final String RUNESTONE_NAME = "rune";
+    
+    //tools
     public static final String PLASTIC_SWORD = "plasticsword";
     public static final String PLASTIC_PICK = "plasticpick";
     public static final String PLASTIC_SHOVEL = "plasticshovel";
     public static final String PLASTIC_AXE = "plasticaxe";
+    public static final String PLASTIC_HOE = "plastichoe";
+    
+    //armors
+    public static final String PLASTIC_HELM = "plastichelm";
+    public static final String PLASTIC_CHEST= "plasticchest";
+    public static final String PLASTIC_LEGS= "plasticlegs";
+    public static final String PLASTIC_BOOTS = "plasticboots";
     
     
     /*COLOUR STRINGS FOR META-BLOCKS or really anything...*/

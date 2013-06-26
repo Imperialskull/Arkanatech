@@ -22,10 +22,20 @@ public class Config {
     //Item Constants
     
     public static int craftingItemsID = ItemIds.CRAFT_ITEMS_DEFAULT;
+    
+    //Tool itemIDs
     public static int plasticPickID = ItemIds.PLASTICPICK_DEFAULT;
     public static int plasticAxeID = ItemIds.PLASTICAXE_DEFAULT;
     public static int plasticShovelID = ItemIds.PLASTICSHOVEL_DEFAULT;
     public static int plasticSwordID = ItemIds.PLASTICSWORD_DEFAULT;
+    public static int plasticHoeID = ItemIds.PLASTICHOE_DEFAULT;
+    
+    //armor itemIDs
+    
+    public static int plasticHelmID = ItemIds.PLASTICHELM_DEFAULT;
+    public static int plasticChestID = ItemIds.PLASTICCHEST_DEFAULT;
+    public static int plasticLegsID = ItemIds.PLASTICLEGS_DEFAULT;
+    public static int plasticBootsID = ItemIds.PLASTICBOOTS_DEFAULT;
     
 
 
@@ -58,10 +68,19 @@ public class Config {
     //ITEM CFG CREATION
     
     craftingItemsID = config.getItem("Crafting items", craftingItemsID).getInt();
+    
+    //tools
     plasticAxeID= config.getItem("Plastic Axe",plasticAxeID).getInt();
     plasticPickID= config.getItem("Plastic Pick",plasticPickID).getInt();
     plasticShovelID= config.getItem("Plastic Shovel",plasticShovelID).getInt();
     plasticSwordID= config.getItem("Plastic Sword",plasticSwordID).getInt();
+    plasticHoeID= config.getItem("Plastic Hoe",plasticHoeID).getInt();
+    
+    //armor
+    plasticHelmID=config.getItem("plastic Helm",plasticHelmID).getInt();
+    plasticChestID=config.getItem("Plastic Chestplate", plasticChestID).getInt();
+    plasticLegsID=config.getItem("Plastic Leggings", plasticLegsID).getInt();
+    plasticBootsID=config.getItem("Plastic Boots", plasticBootsID).getInt();
    
     
     

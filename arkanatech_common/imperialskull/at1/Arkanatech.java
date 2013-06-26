@@ -5,6 +5,7 @@
 
 
     import net.minecraft.creativetab.CreativeTabs;
+import imperialskull.at1.armor.ArkaneArmor;
 import imperialskull.at1.block.ArkaneBlocks;
 import imperialskull.at1.config.Config;
 import imperialskull.at1.core.proxy.CommonProxy;
@@ -21,6 +22,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
 
@@ -60,6 +62,7 @@ import cpw.mods.fml.common.network.NetworkMod;
                 
                 ArkaneBlocks.init();
                 ArkaneItems.init();
+                ArkaneArmor.init();
                 Config.initConfig();
                 
             }
@@ -79,6 +82,7 @@ import cpw.mods.fml.common.network.NetworkMod;
             public void init(FMLInitializationEvent event) {
                 
                 proxy.initRenderingAndTextures();
+                LangFixes();
                 
             }
             
@@ -92,6 +96,14 @@ import cpw.mods.fml.common.network.NetworkMod;
             @PostInit
             public void postInit(FMLPostInitializationEvent event) {
                 
+             
+                
+            }
+            
+            //Language fixes for entities and creative tabs go here
+            public void LangFixes()
+            {
+                LanguageRegistry.instance().addStringLocalization("itemGroup.AT1","Arkanatech");
             }
         }
 

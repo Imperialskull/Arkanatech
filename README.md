@@ -89,6 +89,44 @@ Aditionally: I will add in support for Arenacraft, Buildcraft, Universal Electri
 and Equivilent Exchange (though I am certain this list will continue to grow)
 
 
+Completed
+=========
+
++plastic tools
++plastic armor set
++plastic blocks
++plexiglass blocks
++plexiGlow blocks
++some crafting items
++basic functional config system
+
+Imediate todo list
+==================
+
++add crafting recipes for all items/blocks
++add in the rest of the proposed Synthcraft Items
+{the plexidoor,'splosives,kevlar, etc.}
++Some minor texture work
+
+Intermediate todo list
+======================
+
++get comfortable with tileEntities
++make all Synthcraft machines
++release public mod beta (Synthetic half)
++Build API for TE's
++Integrate Arenacraft
++finish liquid system
+
+Long term todo list
+===================
+
++rune and augment system
++elemental ores, tools, etc
++Aetheric machinery, fuels etc.
++re-release "full mod"
+
+
 
 
 

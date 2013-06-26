@@ -13,6 +13,8 @@ public class ArkaneItems {
     public static Item craftingItem;
     public static Item plasticSword;
     public static Item plasticPick;
+    public static Item plasticShovel;
+    public static Item plasticAxe;
     
     public static void init(){
         
@@ -21,11 +23,16 @@ public class ArkaneItems {
         craftingItem = new CraftingItems(ItemIds.CRAFT_ITEMS_DEFAULT);
         plasticSword = new PlasticSword(ItemIds.PLASTICSWORD_DEFAULT,ArkaneMaterials.toolMatPlastic);
         plasticPick = new PlasticPick(ItemIds.PLASTICPICK_DEFAULT,ArkaneMaterials.toolMatPlastic);
+        plasticShovel = new PlasticShovel(ItemIds.PLASTICSHOVEL_DEFAULT,ArkaneMaterials.toolMatPlastic);
+        plasticAxe = new PlasticAxe(ItemIds.PLASTICAXE_DEFAULT,ArkaneMaterials.toolMatPlastic);
+        
         
         
         
         LanguageRegistry.addName(plasticSword, "Plastic Sword");
         LanguageRegistry.addName(plasticPick, "Plastic Pick");
+        LanguageRegistry.addName(plasticShovel, "Plastic Shovel");
+        LanguageRegistry.addName(plasticAxe, "Plastic Axe");
         
         /* a metadata specific version of LangRegistry for items, switch this to a loop later */
             LanguageRegistry.addName(new ItemStack(craftingItem, 1, 0),"Raw Plastic Lump");

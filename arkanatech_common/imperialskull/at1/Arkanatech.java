@@ -6,6 +6,7 @@
 
     import net.minecraft.creativetab.CreativeTabs;
 import imperialskull.at1.block.ArkaneBlocks;
+import imperialskull.at1.config.Config;
 import imperialskull.at1.core.proxy.CommonProxy;
 import imperialskull.at1.creativetab.CreativeTabAT1;
 import imperialskull.at1.item.ArkaneItems;
@@ -59,6 +60,7 @@ import cpw.mods.fml.common.network.NetworkMod;
                 
                 ArkaneBlocks.init();
                 ArkaneItems.init();
+                Config.initConfig();
                 
             }
             

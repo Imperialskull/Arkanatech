@@ -15,6 +15,8 @@ public class Strings
     public static final String RUNESTONE_NAME = "rune";
     public static final String PLASTIC_SWORD = "plasticsword";
     public static final String PLASTIC_PICK = "plasticpick";
+    public static final String PLASTIC_SHOVEL = "plasticshovel";
+    public static final String PLASTIC_AXE = "plasticaxe";
     
     
     /*COLOUR STRINGS FOR META-BLOCKS or really anything...*/

@@ -1,11 +1,17 @@
 package imperialskull.at1.core.proxy;
 
+import java.io.File;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
 import cpw.mods.fml.common.network.IGuiHandler;
 
 public class CommonProxy implements IGuiHandler {
+    
+    public File getMinecraftDir(){return new File(".");}
    
+    
+    
     public void initRenderingAndTextures(){
         
     }

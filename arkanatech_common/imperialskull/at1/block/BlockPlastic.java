@@ -28,6 +28,18 @@ public class BlockPlastic extends Block {
         this.setResistance(17000000000F);
     }
     
+    /*Passed down to crafting manager for 16 color blocks, gets the ID of the dye and
+    Assigns the block matching metadata (some Mojang-fu)*/
+    public static int getColourFromDye(int par0)
+    {
+        return ~par0 & 15;
+    }
+    
+    public static int getColourFromBlock(int par0)
+    {
+        return ~par0 & 15;
+    }
+    
     @SideOnly(Side.CLIENT)
     public Icon getIcon(int par1, int par2)
     {

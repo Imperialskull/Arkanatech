@@ -54,6 +54,7 @@ public class BlockPlexiglass extends BlockBreakable {
         return super.shouldSideBeRendered(iblockaccess, i, j, k, 1 - l);
       }
     
+    
     @Override
     public int damageDropped(int par1)
     {

@@ -7,6 +7,7 @@ public class BlockIds {
     public static int PLASTICBLOCK_DEFAULT = 2000;
     public static int PLEXIGLASS_DEFUALT = 2001;
     public static int PLEXIGLOW_DEFUALT = 2002;
+    public static int PLEXIDOOR_DEFAULT = 2003; 
     
     
     /*Manually configured block IDs */

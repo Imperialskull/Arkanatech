@@ -16,12 +16,14 @@ public class ArkaneBlocks {
     public static Block plastic;
     public static Block plexiglass;
     public static Block plexiglow;
+    public static Block plexidoor;
     
     public static void init(){
         /*Declaring all block IDs (reference system)*/
         plastic = new BlockPlastic(BlockIds.PLASTICBLOCK_DEFAULT, null);
         plexiglass = new BlockPlexiglass(BlockIds.PLEXIGLASS_DEFUALT, Material.glass, false);
         plexiglow = new BlockPlexiglow(BlockIds.PLEXIGLOW_DEFUALT, Material.glass, false);
+        plexidoor = new BlockPlexidoor(BlockIds.PLEXIDOOR_DEFAULT,Material.glass,false);
 
         
         /*Declare blocks for game registry AKA add me! */

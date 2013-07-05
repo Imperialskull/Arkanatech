@@ -7,12 +7,16 @@ public class Strings
     public static final String PLASTICBLOCK_NAME = "plastic";
     public static final String PLEXIGLASS_NAME = "plexiglass";
     public static final String PLEXIGLOW_NAME = "plexiglow";
+    public static final String PLEXIDOOR_NAME = "plexidoor";
     
     
     /*ITEM NAMES*/
     
     public static final String CRAFT_ITEM_NAME = "";
     public static final String RUNESTONE_NAME = "rune";
+    public static final String WOOD_MP_NAME = "woodmortarpestle";
+    public static final String JELLO_NAME = "jello";
+    public static final String PLEXIDOOR_ITEM_NAME = "plexidoorI";
     
     //tools
     public static final String PLASTIC_SWORD = "plasticsword";

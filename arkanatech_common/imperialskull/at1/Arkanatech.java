@@ -12,6 +12,8 @@ import imperialskull.at1.core.proxy.CommonProxy;
 import imperialskull.at1.creativetab.CreativeTabAT1;
 import imperialskull.at1.item.ArkaneItems;
 import imperialskull.at1.lib.Reference;
+import imperialskull.at1.recipes.ArkanatechRecipes;
+import imperialskull.at1.recipes.ArkaneCraftingHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -22,6 +24,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 
@@ -60,9 +63,12 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
             @PreInit
             public void preInit(FMLPreInitializationEvent event) {
                 
+
+                
                 ArkaneBlocks.init();
                 ArkaneItems.init();
                 ArkaneArmor.init();
+                ArkanatechRecipes.init();
                 Config.initConfig();
                 
             }
@@ -81,6 +87,7 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
             @Init
             public void init(FMLInitializationEvent event) {
                 
+                GameRegistry.registerCraftingHandler( new ArkaneCraftingHandler()); 
                 proxy.initRenderingAndTextures();
                 LangFixes();
                 

@@ -6,7 +6,10 @@ public class ItemIds {
     
     public static int CRAFT_ITEMS_DEFAULT = 27000;
     public static int RUNESTONE_DEFAULT = 27001;
-    
+    public static int WOOD_MORTAR_PESTLE_DEFUALT = 27011;
+    public static int JELLO_DEFAULT = 27012;
+    public static int PLEXIDOOR_ITEM_DEFAULT = 27013;
+   
     //tools
     public static int PLASTICSWORD_DEFAULT = 27002;
     public static int PLASTICPICK_DEFAULT = 27003;
@@ -26,6 +29,7 @@ public class ItemIds {
     
     public static int CRAFT_ITEMS;
     public static int RUNESTONE;
+    public static int WOODMORTARPESTLE;
     
     //tools
     public static int PLASTICSWORD;

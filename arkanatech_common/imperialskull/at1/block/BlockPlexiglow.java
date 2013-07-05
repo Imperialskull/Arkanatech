@@ -32,6 +32,7 @@ public class BlockPlexiglow extends BlockBreakable {
         this.setUnlocalizedName(Strings.PLEXIGLOW_NAME);
     }
     
+
     @SideOnly(Side.CLIENT)
     public int getRenderBlockPass()
     {

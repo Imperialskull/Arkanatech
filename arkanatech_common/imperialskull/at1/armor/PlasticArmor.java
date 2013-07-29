@@ -35,9 +35,9 @@ public class PlasticArmor extends ItemArmor {
     public String getArmorTexture(ItemStack armor, Entity entity, int slot, int layer)
     {
     if(slot == 0 || slot == 1 || slot == 3)
-    return "/mods/at1/textures/armor/PlasticArmor_1.png";
+    return "at1:textures/armor/PlasticArmor_1.png";
     else if(slot == 2)
-    return "/mods/at1/textures/armor/PlasticArmor_2.png";
+    return "at1:textures/armor/PlasticArmor_2.png";
     else
     return null;
     }

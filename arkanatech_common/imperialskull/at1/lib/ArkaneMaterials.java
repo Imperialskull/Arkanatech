@@ -13,6 +13,7 @@ public class ArkaneMaterials {
     //TOOL MATERIALS GO HERE
     
     public static EnumToolMaterial toolMatPlastic = EnumHelper.addToolMaterial("PLASTIC",1, 400, 3F, 2, 5);
+    public static EnumToolMaterial toolMatSAKPlastic = EnumHelper.addToolMaterial("SAKPLASTIC", 1, 2000, 3F, 2, 5);
     
     //ARMOUR MATERIALS GO HERE
     

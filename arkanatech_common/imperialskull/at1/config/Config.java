@@ -33,6 +33,11 @@ public class Config {
     public static int plasticShovelID = ItemIds.PLASTICSHOVEL_DEFAULT;
     public static int plasticSwordID = ItemIds.PLASTICSWORD_DEFAULT;
     public static int plasticHoeID = ItemIds.PLASTICHOE_DEFAULT;
+    public static int sakpmaxeID = ItemIds.SAKPM_AXE_DEFAULT;
+    public static int sakpmhoeID = ItemIds.SAKPM_HOE_DEFAULT;
+    public static int sakpmpickID = ItemIds.SAKPM_PICK_DEFAULT;
+    public static int sakpmswordID = ItemIds.SAKPM_SWORD_DEFAULT;
+    public static int sakpmshovelID = ItemIds.SAKPM_SHOVEL_DEFAULT;
     
     //armor itemIDs
     
@@ -40,6 +45,7 @@ public class Config {
     public static int plasticChestID = ItemIds.PLASTICCHEST_DEFAULT;
     public static int plasticLegsID = ItemIds.PLASTICLEGS_DEFAULT;
     public static int plasticBootsID = ItemIds.PLASTICBOOTS_DEFAULT;
+    public static int nvgoggleID = ItemIds.NIGHTVISION_DEFAULT;
     
 
 
@@ -81,13 +87,19 @@ public class Config {
     plasticPickID= config.getItem("Plastic Pick",plasticPickID).getInt();
     plasticShovelID= config.getItem("Plastic Shovel",plasticShovelID).getInt();
     plasticSwordID= config.getItem("Plastic Sword",plasticSwordID).getInt();
-    plasticHoeID= config.getItem("Plastic Hoe",plasticHoeID).getInt();
+    sakpmaxeID= config.getItem("SAK:plastic axe",sakpmaxeID).getInt();
+    sakpmhoeID= config.getItem("SAK:plastic hoe",sakpmhoeID).getInt();
+    sakpmpickID= config.getItem("SAK:plastic pick",sakpmpickID).getInt();
+    sakpmshovelID= config.getItem("SAK:plastic shovel",sakpmshovelID).getInt();
+    sakpmswordID= config.getItem("SAK:plastic sword",sakpmswordID).getInt();
+    
     
     //armor
     plasticHelmID=config.getItem("plastic Helm",plasticHelmID).getInt();
     plasticChestID=config.getItem("Plastic Chestplate", plasticChestID).getInt();
     plasticLegsID=config.getItem("Plastic Leggings", plasticLegsID).getInt();
     plasticBootsID=config.getItem("Plastic Boots", plasticBootsID).getInt();
+    nvgoggleID=config.getItem("Night Vision Goggles",nvgoggleID).getInt();
    
     
     

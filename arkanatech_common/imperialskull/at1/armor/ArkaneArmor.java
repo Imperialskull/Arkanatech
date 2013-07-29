@@ -13,6 +13,7 @@ public class ArkaneArmor {
     public static Item plasticChest;
     public static Item plasticLegs;
     public static Item plasticBoots;
+    public static Item nightvisionGoggles;
     
     public static void init(){
         
@@ -32,12 +33,15 @@ public class ArkaneArmor {
         .setUnlocalizedName(Strings.PLASTIC_BOOTS)
         .setCreativeTab(Arkanatech.tabsAT1);
         
+        nightvisionGoggles = new NightVisionGoggles(ItemIds.NIGHTVISION_DEFAULT);
+        
         
         //LANG REGISTRY FOR ARMOR
         LanguageRegistry.addName(plasticHelm, "plastic Helm");
         LanguageRegistry.addName(plasticChest, "Plastic Chestplate");
         LanguageRegistry.addName(plasticLegs, "Plastic Leggings");
         LanguageRegistry.addName(plasticBoots, "Plastic Boots");
+        LanguageRegistry.addName(nightvisionGoggles, "Night Vision Goggles");
         
         //armor recipes here
     }

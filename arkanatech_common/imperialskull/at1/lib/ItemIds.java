@@ -16,12 +16,18 @@ public class ItemIds {
     public static int PLASTICSHOVEL_DEFAULT = 27004;
     public static int PLASTICAXE_DEFAULT = 27005;
     public static int PLASTICHOE_DEFAULT = 27006;
+    public static int SAKPM_AXE_DEFAULT = 27014;
+    public static int SAKPM_HOE_DEFAULT = 27015;
+    public static int SAKPM_PICK_DEFAULT = 27016;
+    public static int SAKPM_SHOVEL_DEFAULT = 27017;
+    public static int SAKPM_SWORD_DEFAULT = 27018;
     
     //armors
     public static int PLASTICHELM_DEFAULT = 27007;
     public static int PLASTICCHEST_DEFAULT = 27008;
     public static int PLASTICLEGS_DEFAULT = 27009;
     public static int PLASTICBOOTS_DEFAULT = 27010;
+    public static int NIGHTVISION_DEFAULT = 27019;
     
     
     

@@ -4,26 +4,33 @@
 
 
 
-    import net.minecraft.creativetab.CreativeTabs;
+    import net.minecraft.client.renderer.entity.RenderSnowball;
+import net.minecraft.creativetab.CreativeTabs;
 import imperialskull.at1.armor.ArkaneArmor;
 import imperialskull.at1.block.ArkaneBlocks;
+import imperialskull.at1.block.EntityC4Primed;
 import imperialskull.at1.config.Config;
 import imperialskull.at1.core.proxy.CommonProxy;
+import imperialskull.at1.core.proxy.RenderC4Primed;
 import imperialskull.at1.creativetab.CreativeTabAT1;
+import imperialskull.at1.entity.EntityJeraPotion;
 import imperialskull.at1.item.ArkaneItems;
 import imperialskull.at1.lib.Reference;
+import imperialskull.at1.network.PacketHandler;
+import imperialskull.at1.ore.Oredicthandler;
 import imperialskull.at1.recipes.ArkanatechRecipes;
 import imperialskull.at1.recipes.ArkaneCraftingHandler;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.Init;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
-import cpw.mods.fml.common.Mod.PostInit;
-import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.network.NetworkRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
@@ -36,10 +43,14 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
      */
     @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 
-    @NetworkMod(clientSideRequired= true, serverSideRequired = false)
+    @NetworkMod(clientSideRequired= true, serverSideRequired = false, channels = {Reference.CHANNEL_NAME}, packetHandler = PacketHandler.class)
+    
+
 
 
     public class Arkanatech {
+        
+        
         
         @Instance(Reference.MOD_ID)
         public static Arkanatech instance;
@@ -60,16 +71,21 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
         *
         * @param event The Forge ModLoader pre-initialization event
         */
-            @PreInit
-            public void preInit(FMLPreInitializationEvent event) {
-                
+        
 
+            @EventHandler
+            public void preInit(FMLPreInitializationEvent event) {
                 
                 ArkaneBlocks.init();
                 ArkaneItems.init();
                 ArkaneArmor.init();
                 ArkanatechRecipes.init();
+                Oredicthandler.oreRecipes();
+
                 Config.initConfig();
+                
+                
+                
                 
             }
             
@@ -84,15 +100,35 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
         *
         * @param event The Forge ModLoader initialization event
         */
-            @Init
+            @EventHandler
             public void init(FMLInitializationEvent event) {
+               //GUI HANDLER 
+                NetworkRegistry.instance().registerGuiHandler(instance, proxy);
+                GameRegistry.registerCraftingHandler( new ArkaneCraftingHandler());
                 
-                GameRegistry.registerCraftingHandler( new ArkaneCraftingHandler()); 
+                Oredicthandler.oreRegistration();
+                
+                
+                
+                EntityRegistry.registerModEntity(EntityC4Primed.class, "primedC4", EntityRegistry.findGlobalUniqueEntityId(),this, 128, 1, true);
+                EntityRegistry.registerModEntity(EntityJeraPotion.class, "potionJera", EntityRegistry.findGlobalUniqueEntityId(),this, 129, 1, true);
+   
+                RenderingRegistry.registerEntityRenderingHandler(EntityJeraPotion.class, new RenderSnowball(ArkaneItems.arkanejello, 0));
+                             
+                RenderingRegistry.registerEntityRenderingHandler(EntityC4Primed.class, new RenderC4Primed());
+                
                 proxy.initRenderingAndTextures();
-                LangFixes();
+                proxy.registerTileEntities();
+                
+                LanguageRegistry.instance().addStringLocalization("itemGroup.at1","Arkanatech");
+
+         
+                
+
                 
             }
             
+
             /***
         * This is code that is executed after all mods are initialized in Minecraft
         * This is a good place to execute code that interacts with other mods (ie, loads an addon module
@@ -100,17 +136,16 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
         *
         * @param event The Forge ModLoader post-initialization event
         */
-            @PostInit
+            @EventHandler
             public void postInit(FMLPostInitializationEvent event) {
+            	
+            	
                 
              
                 
             }
             
             //Language fixes for entities and creative tabs go here
-            public void LangFixes()
-            {
-                LanguageRegistry.instance().addStringLocalization("itemGroup.AT1","Arkanatech");
-            }
+
         }
 

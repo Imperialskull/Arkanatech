@@ -19,7 +19,12 @@ public class CraftingItems extends Item {
     private static final String[] CRAFT_ITEM_NAMES = new String[]
             {"plasticlump","clearplasticlump","plasticrod","woodflower",
         "gelatinpowder", "graphitedust","gelatinbowl","mould","filledmould",
-        "syntharmybody", "syntheticstring"
+        "syntharmybody", "syntheticstring","stonedust","copperdust","tindust",
+        "bronzedust","ironladendust","irondust","golddust","emeralddust","diamonddust",
+        "obsidiandust","stonestick","ironstick","bronzestick","goldstick",
+        "emeraldstick","diamondstick","obsidianstick","glowstonestick",
+        "stickmould","ironstickmould","bronzestickmould","goldstickmould",
+        "emeraldstickmould","diamondstickmould","obsidianstickmould","glowstonestickmould",
         
             };
     
@@ -37,7 +42,7 @@ public class CraftingItems extends Item {
      @Override
      public String getUnlocalizedName(ItemStack itemStack){
          
-         int meta = MathHelper.clamp_int(itemStack.getItemDamage(),0,11);
+         int meta = MathHelper.clamp_int(itemStack.getItemDamage(),0,37);
          return super.getUnlocalizedName() + CRAFT_ITEM_NAMES[meta];
      }
      
@@ -46,7 +51,7 @@ public class CraftingItems extends Item {
      @SideOnly(Side.CLIENT)   
      public Icon getIconFromDamage(int meta){
          
-         int j = MathHelper.clamp_int(meta, 0, 11);
+         int j = MathHelper.clamp_int(meta, 0, 37);
          return icons[j];
      }
      
@@ -69,7 +74,7 @@ public class CraftingItems extends Item {
      @SideOnly(Side.CLIENT)
      public void getSubItems(int id, CreativeTabs creativeTab, List list) {
 
-         for (int meta = 0; meta < 11; ++meta) {
+         for (int meta = 0; meta < 37; ++meta) {
              list.add(new ItemStack(id, 1, meta));
          }
      }

@@ -26,6 +26,7 @@ public class Config {
     public static int woodmortarPestleID = ItemIds.WOOD_MORTAR_PESTLE_DEFUALT;
     public static int arkanejelloID = ItemIds.JELLO_DEFAULT;
     public static int itemPlexiDoorID = ItemIds.PLEXIDOOR_ITEM_DEFAULT;
+    public static int itemfilterID = ItemIds.FILTER_DEFAULT;
     
     //Tool itemIDs
     public static int plasticPickID = ItemIds.PLASTICPICK_DEFAULT;
@@ -38,6 +39,16 @@ public class Config {
     public static int sakpmpickID = ItemIds.SAKPM_PICK_DEFAULT;
     public static int sakpmswordID = ItemIds.SAKPM_SWORD_DEFAULT;
     public static int sakpmshovelID = ItemIds.SAKPM_SHOVEL_DEFAULT;
+    public static int refplasticswordID = ItemIds.REFPLASTIC_SWORD_DEFAULT;
+    public static int refplasticpickID = ItemIds.REFPLASTIC_PICK_DEFAULT;
+    public static int refplasticshovelID = ItemIds.REFPLASTIC_SHOVEL_DEFAULT;
+    public static int refplasticaxeID = ItemIds.REFPLASTIC_AXE_DEFAULT;
+    public static int refplastichoeID = ItemIds.REFPLASTIC_HOE_DEFAULT;
+    public static int gilplasticswordID = ItemIds.GILPLASIC_SWORD_DEFUALT;
+    public static int gilplasticpickID = ItemIds.GILPLASTIC_PICK_DEFUALT;
+    public static int gilplasticshovelID = ItemIds.GILPLASTIC_SHOVEL_DEFAULT;
+    public static int gilplasticaxeID = ItemIds.GILPLASTIC_AXE_DEFAULT;
+    public static int gilplastichoeID = ItemIds.GILPLASTIC_HOE_DEFAULT;
     
     //armor itemIDs
     
@@ -81,6 +92,7 @@ public class Config {
     arkanejelloID = config.getItem("jello", arkanejelloID).getInt();
     craftingItemsID = config.getItem("Crafting items", craftingItemsID).getInt();
     woodmortarPestleID = config.getItem("wood mortar & pestle", woodmortarPestleID).getInt();
+    itemfilterID = config.getItem("Filter", itemfilterID).getInt();
     
     //tools
     plasticAxeID= config.getItem("Plastic Axe",plasticAxeID).getInt();
@@ -92,6 +104,17 @@ public class Config {
     sakpmpickID= config.getItem("SAK:plastic pick",sakpmpickID).getInt();
     sakpmshovelID= config.getItem("SAK:plastic shovel",sakpmshovelID).getInt();
     sakpmswordID= config.getItem("SAK:plastic sword",sakpmswordID).getInt();
+    refplasticswordID= config.getItem("Reinforced Plastic Sword",refplasticswordID).getInt();
+    refplasticpickID= config.getItem("Reinforced Plastic Pick",refplasticpickID).getInt();
+    refplasticshovelID= config.getItem("Reinforced Plastic Shovel",refplasticshovelID).getInt();
+    refplasticaxeID= config.getItem("Reinforced Plastic Axe ",refplasticaxeID).getInt();
+    refplastichoeID= config.getItem("Reinforced Plastic Hoe",refplastichoeID).getInt();
+    gilplasticswordID= config.getItem("Gilded Plastic Sword",gilplasticswordID).getInt();
+    gilplasticpickID= config.getItem("Gilded Plastic Pick",gilplasticpickID).getInt();
+    gilplasticaxeID= config.getItem("Gilded Plastic Axe",gilplasticaxeID).getInt();
+    gilplasticshovelID= config.getItem("Gilded Plastic Shovel",gilplasticshovelID).getInt();
+    gilplastichoeID= config.getItem("Gilded Plastic Hoe",gilplastichoeID).getInt();
+    
     
     
     //armor

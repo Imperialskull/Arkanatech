@@ -9,6 +9,7 @@ public class ItemIds {
     public static int WOOD_MORTAR_PESTLE_DEFUALT = 27011;
     public static int JELLO_DEFAULT = 27012;
     public static int PLEXIDOOR_ITEM_DEFAULT = 27013;
+    public static int FILTER_DEFAULT = 27020;
    
     //tools
     public static int PLASTICSWORD_DEFAULT = 27002;
@@ -16,6 +17,19 @@ public class ItemIds {
     public static int PLASTICSHOVEL_DEFAULT = 27004;
     public static int PLASTICAXE_DEFAULT = 27005;
     public static int PLASTICHOE_DEFAULT = 27006;
+    
+    public static int REFPLASTIC_SWORD_DEFAULT = 27021;
+    public static int REFPLASTIC_PICK_DEFAULT = 27022;
+    public static int REFPLASTIC_SHOVEL_DEFAULT = 27023;
+    public static int REFPLASTIC_AXE_DEFAULT = 27024;
+    public static int REFPLASTIC_HOE_DEFAULT = 27025;
+    
+    public static int GILPLASIC_SWORD_DEFUALT = 27026;
+    public static int GILPLASTIC_PICK_DEFUALT = 27027;
+    public static int GILPLASTIC_SHOVEL_DEFAULT = 27028;
+    public static int GILPLASTIC_AXE_DEFAULT = 27029;
+    public static int GILPLASTIC_HOE_DEFAULT = 27030;
+    
     public static int SAKPM_AXE_DEFAULT = 27014;
     public static int SAKPM_HOE_DEFAULT = 27015;
     public static int SAKPM_PICK_DEFAULT = 27016;
@@ -28,26 +42,6 @@ public class ItemIds {
     public static int PLASTICLEGS_DEFAULT = 27009;
     public static int PLASTICBOOTS_DEFAULT = 27010;
     public static int NIGHTVISION_DEFAULT = 27019;
-    
-    
-    
-    /*POST CONFIG ID'S (later) */
-    
-    public static int CRAFT_ITEMS;
-    public static int RUNESTONE;
-    public static int WOODMORTARPESTLE;
-    
-    //tools
-    public static int PLASTICSWORD;
-    public static int PLASTICPICK;
-    public static int PLASTICSHOVEL;
-    public static int PLASTICAXE;
-    public static int PLASTICHOE;
-    
-    //armor
-    public static int PLASTICHELM;
-    public static int PLASTICCHEST;
-    public static int PLASTICLEGS;
-    public static int PLASTICBOOTS;
+
 
 }

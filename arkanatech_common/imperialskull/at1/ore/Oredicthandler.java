@@ -15,6 +15,16 @@ public class Oredicthandler {
 		 OreDictionary.registerOre("itemSilk", new ItemStack(Item.silk));
 		 OreDictionary.registerOre("itemSilk", new ItemStack(ArkaneItems.craftingItem,1,10));
 		 OreDictionary.registerOre("ingotPlastic", new ItemStack(ArkaneItems.craftingItem,1,0));
+		 OreDictionary.registerOre("dustStone", new ItemStack(ArkaneItems.craftingItem,1,11));
+		 OreDictionary.registerOre("dustCopper", new ItemStack(ArkaneItems.craftingItem,1,12));
+		 OreDictionary.registerOre("dustTin", new ItemStack(ArkaneItems.craftingItem,1,13));
+		 OreDictionary.registerOre("dustBronze", new ItemStack(ArkaneItems.craftingItem,1,14));
+		 OreDictionary.registerOre("dustIron", new ItemStack(ArkaneItems.craftingItem,1,16));
+		 OreDictionary.registerOre("dustGold", new ItemStack(ArkaneItems.craftingItem,1,17));
+		 OreDictionary.registerOre("dustEmerald", new ItemStack(ArkaneItems.craftingItem,1,18));
+		 OreDictionary.registerOre("dustDiamond", new ItemStack(ArkaneItems.craftingItem,1,19));
+		 OreDictionary.registerOre("dustObsidian", new ItemStack(ArkaneItems.craftingItem,1,20));
+		 
 	 
 	 }
 	 

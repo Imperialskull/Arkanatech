@@ -27,6 +27,22 @@ public class ArkaneCraftingHandler implements ICraftingHandler {
             }
         }
         
+        for(int i=0;i < craftMatrix.getSizeInventory(); i++){
+            
+            if(craftMatrix.getStackInSlot(i) !=null){
+                ItemStack j = craftMatrix.getStackInSlot(i);
+                
+                if(j.getItem() !=null && j.getItem() == ArkaneItems.woodmortarpestle){
+                    ItemStack k = new ItemStack(ArkaneItems.filter,2,(j.getItemDamage()+1));
+                    
+                    if(k.getItemDamage()>=k.getMaxDamage()){
+                        k.stackSize--;
+                    }
+                    craftMatrix.setInventorySlotContents(i, k);
+                }
+            }
+        }
+        
     }
 
     @Override

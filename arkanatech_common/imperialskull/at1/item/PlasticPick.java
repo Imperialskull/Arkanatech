@@ -19,14 +19,7 @@ public class PlasticPick extends ItemPickaxe {
         this.setUnlocalizedName(Strings.PLASTIC_PICK);
         this.setCreativeTab(Arkanatech.tabsAT1);
     }
-    
-    @Override
-    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
-    {
-        par1ItemStack.itemID = ArkaneItems.arkanejello.itemID;
-		
-        return par1ItemStack;
-    }
+
     
     @Override
     @SideOnly(Side.CLIENT)
